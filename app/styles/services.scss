@@ -1,0 +1,51 @@
+@import "variables";
+.service-container {
+    height: 1000px;
+    .service-header {
+        padding-top: 75px;
+        text-align: center;
+        font-size: 30px;
+        ;
+        width: 20%;
+        margin: 0 auto;
+        border-bottom: 1px solid $secondary-color;
+    }
+}
+
+.large-service-block {
+    width: 80% !important;
+    margin-left: 10% !important;
+}
+
+.serice-block-container {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+    transition: 500ms ease-out;
+    .service-block {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+        background-color: #e3ecfc;
+        padding: 10px;
+        p {
+            width: 80%;
+            margin: 0 auto;
+        }
+        button {
+            transition: 500ms ease-out;
+            background-color: $primary-color;
+            border: 1px solid $secondary-color;
+            margin-top: 20px;
+            height: 40px;
+            width: 20%;
+            &:hover {
+                background-color: $secondary-color;
+                color: $primary-color;
+            }
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+}

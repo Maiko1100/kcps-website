@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from "react";
 import { connect } from "react-redux";
 import { login } from "../actions/userActions";
 import { routerActions } from "react-router-redux";
-import { styles } from '../style/login.scss'
+
 
 function select(state, ownProps) {
     const isAuthenticated = state.data != null ? state.data:false
