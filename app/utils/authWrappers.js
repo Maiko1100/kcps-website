@@ -1,12 +1,12 @@
 import { UserAuthWrapper } from 'redux-auth-wrapper'
 import { routerActions } from 'react-router-redux'
-import Loading from '../components/Loading'
+//import Loading from '../components/Loading'
 
 
 export const UserIsAuthenticated = UserAuthWrapper({
     authSelector: state => state.user,
     authenticatingSelector: state => state.user.isLoading,
-    LoadingComponent: Loading,
+    //LoadingComponent: Loading,
     redirectAction: routerActions.replace,
     wrapperDisplayName: 'UserIsAuthenticated',
     predicate: user => user.token !== null && user.isLoading === false,
